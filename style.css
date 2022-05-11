@@ -1,0 +1,22 @@
+h3{
+    font-size: 25px;
+}
+.btn-success:hover{
+    background-color: antiquewhite;
+    color:brown;
+}
+canvas{
+    margin-top: 80px;
+    animation-name:musolip;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes musolip {
+    from{
+        box-shadow: 40px 40px 100px greenyellow;
+    }
+    to{
+        box-shadow: 40px 40px 100px orangered;
+    }
+    
+}
