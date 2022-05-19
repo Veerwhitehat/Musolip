@@ -1,5 +1,9 @@
+nosex=0
+nosey=0
+
+
 function preload() {
-    
+    nose= loadImage("https://i.postimg.cc/Y0Lc7wqr/mus.png");
 }
 function setup() {
  
@@ -21,19 +25,22 @@ function Modelloaded() {
 function draw() {
     
     image(video,0,0,400,400);
+    image(nose,nosex,nosey,0,0);
   
 
 }
 
 function take_snapshot() {
 
-save("Hatoclown.jpeg");
+save("Musolip.jpeg");
     
 }
 function gotPoses(results) {
 
     if (results.length>0) {
         console.log(results);
+        nosex=results[0].pose.nose.x-400;
+        nosey=results[0].pose.nose.y-590;
         console.log("nosex="+results[0].pose.nose.x);
         console.log("nosey="+results[0].pose.nose.y);
                 
