@@ -25,7 +25,7 @@ function Modelloaded() {
 function draw() {
     
     image(video,0,0,400,400);
-    image(nose,nosex,nosey,0,0);
+    image(nose,nosex,nosey,70,70);
   
 
 }
@@ -39,8 +39,8 @@ function gotPoses(results) {
 
     if (results.length>0) {
         console.log(results);
-        nosex=results[0].pose.nose.x-400;
-        nosey=results[0].pose.nose.y-590;
+        nosex=results[0].pose.nose.x-170;
+        nosey=results[0].pose.nose.y-70;
         console.log("nosex="+results[0].pose.nose.x);
         console.log("nosey="+results[0].pose.nose.y);
                 
